@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4991656225293440}
   - component: {fileID: 212933274689031022}
   - component: {fileID: 95794380955681712}
+  - component: {fileID: 114982846296060332}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -59,6 +60,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114982846296060332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1728001895394528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948d814ad70ef27478aa2417ac90dab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stone1: {fileID: 21300000, guid: c8645556c00293e49a8cf3e0e66e79dc, type: 3}
+  stone2: {fileID: 21300002, guid: c8645556c00293e49a8cf3e0e66e79dc, type: 3}
+  stone3: {fileID: 21300004, guid: c8645556c00293e49a8cf3e0e66e79dc, type: 3}
+  stone4: {fileID: 21300006, guid: c8645556c00293e49a8cf3e0e66e79dc, type: 3}
+  stone5: {fileID: 21300008, guid: c8645556c00293e49a8cf3e0e66e79dc, type: 3}
 --- !u!212 &212933274689031022
 SpriteRenderer:
   m_ObjectHideFlags: 1
