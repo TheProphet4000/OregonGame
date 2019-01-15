@@ -10,6 +10,7 @@ public class Raycast : MonoBehaviour {
     public float weaponRange;
     public float hitForce;
     public float delay;
+    public int Health = 100;
 //---------------------------------------------
     public Transform gunEnd;
     public ParticleSystem muzzleFlash;
@@ -32,9 +33,13 @@ public class Raycast : MonoBehaviour {
 
     void Update()
     {
+        if(Health <= 0)
+        {
+            Debug.Log("Dead");
+        }
         if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
-            //---------------------- vis muxxleflash-------------------------------
+            //---------------------- vis muzzleflash-------------------------------
             muzzleFlash.Play();
             //--------------- Skyd---------------------------------------------------
             nextFire = Time.time + fireRate;
@@ -49,10 +54,11 @@ public class Raycast : MonoBehaviour {
             Invoke("playShell", delay);
 
 
-                //_________________________logik med liv og skade____________________________________
+                //_________________________logik med Fjende liv og skade på Fjende____________________________________
 
                 if (Physics.Raycast(rayOrigin, fpsCam.transform.forward, out hit, weaponRange))
                 {
+
                     ShootableBox health = hit.collider.GetComponent<ShootableBox>();
 
                     if (health != null)
@@ -62,11 +68,12 @@ public class Raycast : MonoBehaviour {
 
                         if (hit.rigidbody != null)
                         {
+                            
                             hit.rigidbody.AddForce(Camera.main.transform.forward * hitForce);
-                    Debug.Log("hit");
+                            hit.collider.gameObject.GetComponent<ShootableBox>();
                         }
                 }
-            //.-------------------------------------------------------------
+            //_______________________________________________________________________________________________
         }
         else if (Input.GetButtonUp("Fire1"))
         {
@@ -91,4 +98,9 @@ public class Raycast : MonoBehaviour {
       audio2.PlayOneShot(BulletShell);
     }
     //----------------------------------------------
+    void OnTriggerStay(Collider other)
+    {
+        Debug.Log("HIT");
+        Health = Health - Health;
+    }
 }

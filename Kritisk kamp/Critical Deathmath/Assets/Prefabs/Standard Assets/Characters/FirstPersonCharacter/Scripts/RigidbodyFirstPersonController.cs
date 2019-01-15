@@ -218,7 +218,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     y = CrossPlatformInputManager.GetAxis("Vertical")
                 };
 			movementSettings.UpdateDesiredTargetSpeed(input);
-            Debug.Log("movement");
+            //Debug.Log("movement");
             return input;
         }
 

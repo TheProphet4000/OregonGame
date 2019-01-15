@@ -3,49 +3,32 @@ using System.Collections;
 
 public class ShootableBox : MonoBehaviour
 {
-
-    //The box's current health point total
-
+    public int Bite = 10;
     public int currentHealth = 3;
-    
-    
+    private Animator anim;
+
 
     public void Damage(int damageAmount)
     {
-
-        //subtract damage amount when Damage function is called
-
         currentHealth -= damageAmount;
-
-        //Check if health has fallen below zero
-
+        anim = GetComponent<Animator>();
         if (currentHealth <= 0)
-
         {
-
-            //if health has fallen below zero, deactivate it 
-
-            gameObject.SetActive(false);
-
+            anim.Play("ghost_die");
+            Bite = Bite-Bite;
+            currentHealth = currentHealth - currentHealth;
         }
+    }
+    public void FollowPlayer()
+    {
 
     }
-
-    void Star()
+    void OnTriggerStay(Collider other)
     {
-            Debug.Log("Follow");
-            
+
     }
-
-    public void OnTriggerEnter(Collider other)
+    public void FinalDie()
     {
-        Debug.Log("Triigered");
-        if (other.CompareTag("Player"))
-        {
-            Star();
-        }
+        gameObject.SetActive(false);
     }
 }
-
-
-
