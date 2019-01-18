@@ -17,20 +17,20 @@ public class Generator : MonoBehaviour {
 	PerlinNoise noise;
 	
 	void Start () {
-		noise = new PerlinNoise(Random.Range(1000000,10000000));
+		noise = new PerlinNoise(Random.Range(1000000,10000000)); //vi bruger en random funktion der kaldes perlin noise
 		Regenerate();
 	}
 	
-	private void Regenerate(){
+	private void Regenerate(){ //laver terran
 		
-		float width = Dirt.transform.lossyScale.x;
+		float width = Dirt.transform.lossyScale.x;  //sætter to variabler up
 		float height = Stone.transform.lossyScale.y;
 		
 		for (int i = minX; i < maxX; i++){//columns (x values)
 			int columnHeight = 2 + noise.getNoise(i - minX, maxY - minY - 2);
 			for(int j = minY; j < minY + columnHeight; j++){//rows (y values)
 				GameObject block = (j == minY + columnHeight - 1)?Dirt:Stone;
-				Instantiate(block, new Vector2(i * width / BlockSpace, j * height / BlockSpace), Quaternion.identity);
+				Instantiate(block, new Vector2(i * width / BlockSpace, j * height / BlockSpace), Quaternion.identity); //spawner blocke
 			}
 		}
 	}
