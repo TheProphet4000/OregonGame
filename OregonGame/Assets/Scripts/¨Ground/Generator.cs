@@ -37,6 +37,6 @@ public class Generator : MonoBehaviour {
 				Instantiate(block, new Vector2(i * width / BlockSpace, j * height / BlockSpace), Quaternion.identity); //spawner blocke
 			}
 		}
-        for (int m = middleX; m < middleX
+        
 	}
 }
