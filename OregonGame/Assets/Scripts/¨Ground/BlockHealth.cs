@@ -30,7 +30,7 @@ public class BlockHealth : MonoBehaviour {
         }
         else if(Health == 0)
         {
-            DestroyObject(gameObject);
+           Destroy(gameObject);
         }
     }
 }
