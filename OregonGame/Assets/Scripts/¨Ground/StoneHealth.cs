@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockHealth : MonoBehaviour {
+public class StoneHealth : MonoBehaviour {
 
     public int Health;
     public Sprite full;
@@ -12,27 +12,27 @@ public class BlockHealth : MonoBehaviour {
     public Sprite last;
     private void Update()
     {
-        if(Health == 100)
+        if (Health == 100)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = full;
         }
-        else if(Health == 80)
+        else if (Health == 80)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = eighty;
         }
-        else if(Health == 60)
+        else if (Health == 60)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = middel;
         }
-        else if(Health == 40)
+        else if (Health == 40)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = fourty;
         }
-        else if(Health == 20)
+        else if (Health == 20)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = last;
         }
-        else if(Health == 0)
+        else if (Health == 0)
         {
             Destroy(gameObject);
         }
