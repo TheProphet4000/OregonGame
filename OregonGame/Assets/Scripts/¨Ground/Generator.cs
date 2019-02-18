@@ -7,7 +7,6 @@ public class Generator : MonoBehaviour {
 	
 	public GameObject Stone; 
 	public GameObject Dirt;
-    public GameObject Back; //Baggrunden som er en sprite, renders som en character bagerst.
 	
 	public int minX = -10;   //variable på længte og bredte
 	public int maxX = 10;
