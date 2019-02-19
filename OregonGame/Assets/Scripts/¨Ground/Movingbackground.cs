@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Movingbackground : MonoBehaviour
 {
-    public GameObject player;
-    private Vector3 offset;
-    void Start()
-    {
-        offset = transform.position - player.transform.position;
-    }
+    public float ScroolX;
+    public float ScroolY;
 
-    // LateUpdate is called after Update each frame
-    void LateUpdate()
+    private void Update()
     {
-        transform.position = player.transform.position + offset;
+        float OffX = ScroolX * Time.deltaTime;
+        float OffY = ScroolY * Time.deltaTime;
+        GetComponent<SpriteRenderer>().material.mainTextureOffset = new Vector2(OffX, OffY);
     }
 }
