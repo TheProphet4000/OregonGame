@@ -4,39 +4,17 @@ using UnityEngine;
 
 public class Blocksstem : MonoBehaviour
 {
-    public float force = 5;
-
-    private void Update()
+    private Vector2 PlayerPos;
+    private Vector2 mousePosition;
+    public int PickDistance;
+    void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        mousePosition = Input.mousePosition;
+        RaycastHit2D hit = Physics2D.Raycast(PlayerPos, mousePosition, PickDistance);
+
+        if (hit == true &&  )
         {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit, 100.0f))
-            {
-                if (hit.transform != null)
-                {
-
-                    Rigidbody rb;
-
-                    if (rb = hit.transform.GetComponent<Rigidbody>())
-                    {
-                        PrintName(hit.transform.gameObject);
-                        LaunchIntoAir(rb);
-                    }
-                }
-            }
+            Destroy(GameObject.Find(hit.collider.gameObject.name));
         }
-    }
-
-    private void PrintName(GameObject go)
-    {
-        print(go.name);
-    }
-
-    private void LaunchIntoAir(Rigidbody rig)
-    {
-        rig.AddForce(rig.transform.up * force, ForceMode.Impulse);
     }
 }
