@@ -9,12 +9,17 @@ public class Blocksstem : MonoBehaviour
     public int PickDistance;
     void Update()
     {
-        mousePosition = Input.mousePosition;
-        RaycastHit2D hit = Physics2D.Raycast(PlayerPos, mousePosition, PickDistance);
-
-        if (hit == true &&  )
+        if (Input.GetMouseButtonDown)
         {
-            Destroy(GameObject.Find(hit.collider.gameObject.name));
+            mousePosition = Input.mousePosition;
+            RaycastHit2D hit = Physics2D.Raycast(PlayerPos, mousePosition, PickDistance);
+
+            if (hit == true && CompareTag("Box"))
+            {
+                Destroy(hit.collider.gameObject);
+                Debug.Log(hit.distance);
+                Debug.Log("hit");
+            }
         }
     }
 }
