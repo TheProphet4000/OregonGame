@@ -5,12 +5,14 @@ using UnityEngine;
 public class Blocksstem : MonoBehaviour
 {
     private Vector2 PlayerPos;
+    public GameObject Player;
     private Vector2 mousePosition;
     public int PickDistance;
     void Update()
     {
-        if (Input.GetMouseButtonDown)
+        if (Input.GetMouseButtonDown(0))
         {
+            PlayerPos = Player.gameObject.transform.position;
             mousePosition = Input.mousePosition;
             RaycastHit2D hit = Physics2D.Raycast(PlayerPos, mousePosition, PickDistance);
 
