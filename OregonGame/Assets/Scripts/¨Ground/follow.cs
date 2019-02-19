@@ -5,7 +5,7 @@ using UnityEngine;
 public class follow : MonoBehaviour
 {
     public GameObject Player;
-    public int F_speed;
+    public float F_speed;
     void FixedUpdate()
     {
         Vector3 toTarget = Player.transform.position - transform.position;

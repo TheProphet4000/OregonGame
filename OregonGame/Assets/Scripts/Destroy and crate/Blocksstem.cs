@@ -9,7 +9,7 @@ public class Blocksstem : MonoBehaviour
     public int PickDistance;
     void Update()
     {
-        if (Input.GetMouseButtonDown)
+        if (Input.GetMouseButtonDown(0))
         {
             mousePosition = Input.mousePosition;
             RaycastHit2D hit = Physics2D.Raycast(PlayerPos, mousePosition, PickDistance);
