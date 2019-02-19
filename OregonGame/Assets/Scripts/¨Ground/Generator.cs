@@ -27,7 +27,7 @@ public class Generator : MonoBehaviour {
 		float height = Stone.transform.lossyScale.y;
 		
 		for (int i = minX; i < maxX; i++){//columns (x values)
-			int columnHeight = 2 + noise.getNoise(i - minX, maxY - minY - 2);
+			int columnHeight = 10 + noise.getNoise(i - minX, maxY - minY - 2);
 
 			for(int j = minY; j < minY + columnHeight; j++){//rows (y values)
 
