@@ -155,13 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa3e57ba111f0ef428c35c8750e6680f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stone: {fileID: 7695352580763492865, guid: 43da04d5c58ba1445b89ebabdcb81dd9, type: 3}
-  Dirt: {fileID: 5334520818149190023, guid: 9f66a2bd30e7bd54db7f9b3fd6678c99, type: 3}
-  minX: -30
-  maxX: 30
+  Stone: {fileID: 2508932304554775902, guid: 43da04d5c58ba1445b89ebabdcb81dd9, type: 3}
+  Dirt: {fileID: 2797411215868641424, guid: 9f66a2bd30e7bd54db7f9b3fd6678c99, type: 3}
+  minX: -10
+  maxX: 10
   minY: -10
   maxY: 10
-  BlockSpace: 0.4
+  BlockSpace: 0.25
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
