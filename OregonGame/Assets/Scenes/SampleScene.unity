@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315172062}
   - component: {fileID: 315172063}
+  - component: {fileID: 315172064}
   m_Layer: 2
   m_Name: GroundGenerator
   m_TagString: Untagged
@@ -162,6 +163,22 @@ MonoBehaviour:
   minY: -10
   maxY: 10
   BlockSpace: 0.25
+--- !u!114 &315172064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315172061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 610d5920910c1dc4786ae811098eadd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints: []
+  enemy: {fileID: 0}
+  spawnTime: 5
+  spawnDelay: 3
 --- !u!1 &345480359
 GameObject:
   m_ObjectHideFlags: 0
