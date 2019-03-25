@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
+    public int Health = 1;
+    public int DropAmount = 1;
     // Start is called before the first frame update
     void Start()
     {
