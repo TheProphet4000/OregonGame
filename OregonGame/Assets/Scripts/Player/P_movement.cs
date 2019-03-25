@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class P_movement : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public float speed;
+
     void Start()
     {
-        
     }
-
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        float moveHorizontal = Input.GetAxis("Horizontal");
+
+        float moveVertical = Input.GetAxis("Vertical");
+
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
     }
 }
