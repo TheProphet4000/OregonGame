@@ -161,6 +161,25 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6238853024409713147}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &202744706
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202744705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6c8707a5cc2f0c648b6549ed6b6ffc65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &202744710
 Rigidbody2D:
   serializedVersion: 4
@@ -558,6 +577,17 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.b
       value: 0.56078434
       objectReference: {fileID: 0}
+    - target: {fileID: 6238853024763880223, guid: 9cd8f691025ef784bb88a949e60258f1,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 202744706}
+    - target: {fileID: 6238853024763880223, guid: 9cd8f691025ef784bb88a949e60258f1,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 202744706}
     m_RemovedComponents:
     - {fileID: 6238853024340627726, guid: 9cd8f691025ef784bb88a949e60258f1, type: 3}
+    - {fileID: 6238853024763880219, guid: 9cd8f691025ef784bb88a949e60258f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9cd8f691025ef784bb88a949e60258f1, type: 3}
