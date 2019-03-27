@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4738043717945682777}
   - component: {fileID: 274112983458597801}
   - component: {fileID: 3064571141748629318}
+  - component: {fileID: 8706363012331099999}
   m_Layer: 0
   m_Name: Jern3
   m_TagString: Untagged
@@ -106,3 +107,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.06}
   m_EdgeRadius: 0
+--- !u!50 &8706363012331099999
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6339603012866299219}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
