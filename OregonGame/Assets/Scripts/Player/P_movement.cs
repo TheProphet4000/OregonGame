@@ -20,18 +20,30 @@ public class P_movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             anim.Play("WalkUp");
+        } else if (Input.GetKeyUp(KeyCode.W))
+        {
+            anim.Play("IdleUp");
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
             anim.Play("WalkDown");
+        }else if (Input.GetKeyUp(KeyCode.S))
+        {
+            anim.Play("IdleDown");
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
             anim.Play("WalkLeft");
+        }else if (Input.GetKeyUp(KeyCode.A))
+        {
+            anim.Play("IdleLeft");
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
             anim.Play("WalkRight");
+        }else if (Input.GetKeyUp(KeyCode.D))
+        {
+            anim.Play("IdleRight");
         }
 
     }

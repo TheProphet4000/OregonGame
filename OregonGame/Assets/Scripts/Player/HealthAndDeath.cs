@@ -7,27 +7,28 @@ public class HealthAndDeath : MonoBehaviour
 {
     public int health = 100;
 
-    void Start()
-    {
-        
-    }
     private void TakeDamage()
     {
             health = 0;
     }
     void Update()
     {
+
+
+    //-----------------------Død---------------------------
+        //-suicide
         if (Input.GetKey(KeyCode.K))
         {
             Debug.Log("Key pressed");
             TakeDamage();
         }
-
+        //-check live
         if (health <= 0)
         {
             Debug.Log("Død");
             Death();
         }
+
     }
 
 
@@ -36,4 +37,5 @@ public class HealthAndDeath : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    //-------------------------------------------------------
 }
