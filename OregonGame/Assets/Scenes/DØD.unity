@@ -144,7 +144,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -680,8 +680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 126}
-  m_SizeDelta: {x: 412.26, y: 113}
+  m_AnchoredPosition: {x: 26.95, y: 26.21}
+  m_SizeDelta: {x: 520.54, y: 279.87}
   m_Pivot: {x: 0.52528155, y: 0.40200028}
 --- !u!114 &1574335587
 MonoBehaviour:
@@ -716,7 +716,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The longer you stare at death,
+  m_Text: 'you fall to the ground, slowly bleeding out.
+
+    FUCKING MINORITET
+
+    The longer you stare at death,
 
     the more death stare into you.'
 --- !u!222 &1574335588
