@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7323462290513777221}
   m_Layer: 0
   m_Name: Aresium4
-  m_TagString: Untagged
+  m_TagString: Aresium
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

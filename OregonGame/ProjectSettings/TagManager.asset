@@ -4,7 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Box
+  - Aresium
+  - Jern
+  - Stem
+  - "Tr\xE6"
+  - Mad
+  - LootLille
+  - LootStor
+  - "V\xE5benLille"
+  - "V\xE5benStor"
   layers:
   - Default
   - TransparentFX

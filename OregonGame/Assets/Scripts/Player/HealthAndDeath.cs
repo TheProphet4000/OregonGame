@@ -6,27 +6,16 @@ using UnityEngine.SceneManagement;
 public class HealthAndDeath : MonoBehaviour
 {
     public int health;
-    public int Food;
-    public int Eating = 5;
+
     //------------------------------------------------------------------------------
     private void Start()
     {
-        health = 0 + health;
-        Food = 0+ Food;        //- Resets everyting to it's normal setting
-        StartCoroutine(Timer());
     }
     private void TakeDamage()
     {
             health = 0;
     }
     //------------------------------------------------------------------------------
-
-    IEnumerator Timer()   //This funktion is the timer for hunger
-    {
-        yield return new WaitForSeconds(5);  //-for every x sekunds remove eating from food
-        Food = Food - Eating;
-        Timer();
-    }
     void Update()
     {
 
@@ -42,11 +31,7 @@ public class HealthAndDeath : MonoBehaviour
         {
             Death();
         }
-        if (Food <= 0)
-        {
-            Death();
-        }
-        Timer();
+
     }
     //----------------------------------------------------------------------------
 
