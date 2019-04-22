@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/D\xD8D.unity"
     guid: 1cf0053b1a4a5a74c83eb691cc90e66e
-  - enabled: 1
-    path: Assets/Scenes/EndGame.unity
-    guid: 9b2c0dd12fb8ef141b0fbf3cdcbd61da
-  - enabled: 1
-    path: Assets/Scenes/SuperSecretEastereggScene.unity
-    guid: 51f988cb3337ab44d957676a9a85e725
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
