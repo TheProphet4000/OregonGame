@@ -571,6 +571,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -591,10 +592,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 2
-  cloudProjectId: 
+  cloudProjectId: 5bcc2c73-f18f-4f95-a91d-42efa3cf6007
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: OregonGame
+  organizationId: shutterclap
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
