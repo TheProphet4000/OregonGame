@@ -8,15 +8,21 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/MenuScene.unity
-    guid: f9f07d1568b35cd4889b4def8ae7b2cc
+    path: Assets/Scenes/menu.unity
+    guid: 2ed13f5fd72712445861b415d999f1b8
   - enabled: 1
     path: Assets/Scenes/SpilVerden.unity
     guid: e2837369c74ed294dbf1c0998add86bb
   - enabled: 1
     path: "Assets/Scenes/D\xD8D.unity"
     guid: 1cf0053b1a4a5a74c83eb691cc90e66e
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 0ea5ba3df088ab149a1f6f620766d669
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

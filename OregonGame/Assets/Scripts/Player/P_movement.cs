@@ -8,6 +8,7 @@ public class P_movement : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         anim = gameObject.GetComponent<Animator>();
     }
     void Update()

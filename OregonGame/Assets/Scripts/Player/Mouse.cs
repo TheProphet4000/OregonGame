@@ -7,7 +7,7 @@ public class Mouse : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.visible = true;
+        Cursor.visible = false;
         //-fortæller at man skal kunne se musen på skærmen
     }
 }
